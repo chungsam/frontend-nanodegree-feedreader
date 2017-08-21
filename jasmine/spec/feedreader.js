@@ -91,7 +91,9 @@ $(function () {
         });
 
         it('has at least one entry after loadFeed() is called', function (done) {
-            expect($('.feed').children().length).toBeGreaterThan(0);
+            var feedEntry = $('div.feed>a.entry-link:first-child>article.entry');
+            expect(feedEntry).toBeDefined();
+            expect(feedEntry.length).toBe(1);
             done();
         });
 
@@ -111,11 +113,15 @@ $(function () {
         // This compares the title of the first posting that returns from from loadFeed(0)
         // with the title of the posting that returns from loadFeed(1).
         it('has new content after a new feed is loaded', function (done) {
-            postFromFeed0 = $('.feed a:first-child').text();
+            $postFromFeed0 = $('.feed a:first-child');
 
             loadFeed(1, function () {
-            postFromFeed1 = $('.feed a:first-child').text();
-                expect(postFromFeed0).not.toEqual(postFromFeed1);
+                $postFromFeed1 = $('.feed a:first-child');
+
+                expect($postFromFeed0).toBeDefined();
+                expect($postFromFeed1).toBeDefined();
+                expect($postFromFeed0.text()).not.toEqual($postFromFeed1.text());
+
                 done();
             });
         });
