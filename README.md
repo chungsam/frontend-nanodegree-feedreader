@@ -5,7 +5,7 @@
 ## Introduction
 This project is part of the Udacity Front-End Nanodegree (FEND) Program.
 
-Here, I demonstrate a simple Jasmine test suite for testing a feed reader. The specs for the test are located [here](jasmine/spec).
+Udacity prepared all the code for the underlying feed reader app. Then, I wrote simple Jasmine test suite for testing a feed reader. The test specs are located [here](jasmine/spec).
 
 ## Getting Started
 To run the tests, simply open [index.html](index.html). The test are located towards the bottom of the window.
