@@ -1,3 +1,20 @@
+# Udacity FEND Feed Reader Testing Project - Jasmine Unit Testing
+
+### By Sam Chung
+
+## Introduction
+This project is part of the Udacity Front-End Nanodegree (FEND) Program.
+
+Here, I demonstrate a simple Jasmine test suite for testing a feed reader. The specs for the test are located [here](jasmine/spec).
+
+## Getting Started
+To run the tests, simply open (index.html)[index.html]. The test are located towards the bottom of the window.
+
+## Additional Notes
+Original project specs from Udacity FEND are located below.
+
+---
+
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
